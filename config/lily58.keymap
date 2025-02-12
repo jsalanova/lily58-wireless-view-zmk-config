@@ -50,11 +50,11 @@
 
             display-name = "Lower";
             bindings = <
-&none             &kp F1  &kp F2  &kp F3     &kp F4  &kp F5                             &kp F6           &kp F7           &kp F8           &kp F9  &kp F10  &kp F11
-&none             &none   &none   &none      &none   &none                              &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none   &none    &kp EQUAL
-&kp LEFT_CONTROL  &none   &none   &none      &none   &none                              &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none   &none    &none
-&kp LEFT_SHIFT    &trans  &trans  &vim_yank  &trans  &trans  &trans    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none   &none    &kp RIGHT_SHIFT
-                                  &trans     &trans  &trans  &trans    &trans           &trans           &trans           &trans
+&none             &kp F1  &kp F2  &kp F3        &kp F4  &kp F5                             &kp F6           &kp F7           &kp F8           &kp F9  &kp F10  &kp F11
+&none             &none   &none   &none         &none   &none                              &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none   &none    &kp EQUAL
+&kp LEFT_CONTROL  &none   &none   &none         &none   &none                              &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none   &none    &none
+&kp LEFT_SHIFT    &trans  &trans  &vim_yank     &trans  &trans  &trans    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none   &none    &kp RIGHT_SHIFT
+                                  &kp LEFT_ALT  &trans  &trans  &trans    &trans           &trans           &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -70,11 +70,11 @@
 
             display-name = "Raise";
             bindings = <
-&trans            &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans  &trans     &trans
-&none             &none   &none   &none   &none   &none                     &none   &none     &none     &none   &none      &trans
-&kp LEFT_CONTROL  &none   &none   &none   &none   &none                     &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
-&kp LEFT_SHIFT    &none   &none   &none   &none   &none   &trans    &trans  &none   &none     &none     &none   &none      &kp RIGHT_SHIFT
-                                  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans
+&trans            &trans  &trans  &trans        &trans  &trans                    &trans  &trans    &trans    &trans  &trans     &trans
+&none             &none   &none   &none         &none   &none                     &none   &none     &none     &none   &none      &trans
+&kp LEFT_CONTROL  &none   &none   &none         &none   &none                     &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
+&kp LEFT_SHIFT    &none   &none   &none         &none   &none   &trans    &trans  &none   &none     &none     &none   &none      &kp RIGHT_SHIFT
+                                  &kp LEFT_ALT  &trans  &trans  &trans    &trans  &trans  &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -86,7 +86,7 @@
 &trans          &kp SINGLE_QUOTE  &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp PERIOD                    &kp AMPS   &trans      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT   &trans
 &trans          &kp EXCLAMATION   &kp MINUS      &kp PLUS          &kp KP_EQUAL       &kp HASH                      &kp PIPE   &kp COLON   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans
 &kp LEFT_SHIFT  &kp CARET         &kp SLASH      &kp ASTERISK      &kp BACKSLASH      &trans      &trans    &trans  &kp TILDE  &kp DOLLAR  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN   &kp RIGHT_SHIFT
-                                                 &trans            &trans             &trans      &trans    &trans  &trans     &trans      &trans
+                                                 &kp LEFT_ALT      &trans             &trans      &trans    &trans  &trans     &trans      &trans
             >;
         };
     };
