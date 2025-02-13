@@ -12,7 +12,7 @@
         vim_yank: vim_yank {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DOUBLE_QUOTES &kp EQUAL &kp Y>;
+            bindings = <&kp DOUBLE_QUOTES &kp PLUS &kp Y>;
             label = "VIM_YANK";
             tap-ms = <10>;
             wait-ms = <10>;
