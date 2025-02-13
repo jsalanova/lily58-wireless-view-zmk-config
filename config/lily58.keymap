@@ -70,7 +70,7 @@
             // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
             //                     |      |      |      |        |  |       |      |       |       |
 
-            display-name = "Movement";
+            display-name = "Moves";
             bindings = <
 &trans            &trans  &trans  &trans        &trans  &trans                    &trans    &trans     &trans        &trans     &trans  &trans
 &none             &none   &none   &none         &none   &none                     &kp HOME  &kp PG_DN  &kp PG_UP     &kp END    &none   &trans
@@ -90,6 +90,8 @@
 &kp LEFT_CONTROL  &kp CARET         &kp SLASH      &kp ASTERISK      &kp BACKSLASH      &trans      &trans    &trans  &kp TILDE  &kp DOLLAR  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN   &kp RIGHT_SHIFT
                                                    &kp LEFT_ALT      &trans             &trans      &trans    &trans  &trans     &trans      &trans
             >;
+
+            label = "Symbols";
         };
     };
 };
