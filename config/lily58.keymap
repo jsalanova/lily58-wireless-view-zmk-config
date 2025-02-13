@@ -12,7 +12,7 @@
         vim_yank: vim_yank {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DOUBLE_QUOTES &kp EQUAL &kp EQUAL>;
+            bindings = <&kp DOUBLE_QUOTES &kp EQUAL &kp Y>;
             label = "VIM_YANK";
         };
     };
@@ -70,11 +70,11 @@
 
             display-name = "Raise";
             bindings = <
-&trans            &trans  &trans  &trans        &trans  &trans                    &trans  &trans    &trans         &trans     &trans     &trans
-&none             &none   &none   &none         &none   &none                     &none   &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END    &trans
-&kp LEFT_CONTROL  &none   &none   &none         &none   &none                     &trans  &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &trans
-&kp LEFT_SHIFT    &none   &none   &none         &none   &none   &trans    &trans  &none   &none     &none          &none      &none      &kp RIGHT_SHIFT
-                                  &kp LEFT_ALT  &trans  &trans  &trans    &trans  &trans  &trans    &trans
+&trans            &trans  &trans  &trans        &trans  &trans                    &trans    &trans    &trans         &trans     &trans   &trans
+&none             &none   &none   &none         &none   &none                     &none     &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END  &trans
+&kp LEFT_CONTROL  &none   &none   &none         &none   &none                     &kp LEFT  &kp DOWN  &kp UP_ARROW   &kp RIGHT  &none    &none
+&kp LEFT_SHIFT    &none   &none   &none         &none   &none   &trans    &trans  &none     &none     &none          &none      &none    &kp RIGHT_SHIFT
+                                  &kp LEFT_ALT  &trans  &trans  &trans    &trans  &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
