@@ -14,6 +14,8 @@
             #binding-cells = <0>;
             bindings = <&kp DOUBLE_QUOTES &kp EQUAL &kp Y>;
             label = "VIM_YANK";
+            tap-ms = <10>;
+            wait-ms = <10>;
         };
     };
 
