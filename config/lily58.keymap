@@ -23,8 +23,8 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT>;
             label = "VIRTUAL_DESKTOP_MOVEMENT";
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <50>;
+            tap-ms = <200>;
         };
 
         move_right_virtual_desktop: move_right_virtual_desktop {
@@ -32,8 +32,8 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_CONTROL &kp LEFT_ALT &kp RIGHT>;
             label = "MOVE_RIGHT_VIRTUAL_DESKTOP";
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <50>;
+            tap-ms = <200>;
         };
 
         moveWindowLeftVirtualDesktop: moveWindowLeftVirtualDesktop {
@@ -41,8 +41,8 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT &kp LEFT_SHIFT>;
             label = "MOVEWINDOWLEFTVIRTUALDESKTOP";
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <50>;
+            tap-ms = <200>;
         };
 
         moveWindowRightVirtualDesktop: moveWindowRightVirtualDesktop {
@@ -50,8 +50,8 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_CONTROL &kp LEFT_ALT &kp RIGHT &kp LEFT_SHIFT>;
             label = "MOVEWINDOWRIGHTVIRTUALDESKTOP";
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <50>;
+            tap-ms = <200>;
         };
     };
 
