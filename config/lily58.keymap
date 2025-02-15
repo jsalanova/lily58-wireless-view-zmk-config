@@ -21,7 +21,7 @@
         move_left_virtual_desktop: virtual_desktop_movement {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT>;
+            bindings = <&kp LC(LA(LEFT_ARROW))>;
             label = "VIRTUAL_DESKTOP_MOVEMENT";
             wait-ms = <0>;
         };
@@ -29,7 +29,7 @@
         move_right_virtual_desktop: move_right_virtual_desktop {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp LEFT_ALT &kp RIGHT>;
+            bindings = <&kp LC(LA(RIGHT_ARROW))>;
             label = "MOVE_RIGHT_VIRTUAL_DESKTOP";
             wait-ms = <10>;
             tap-ms = <10>;
@@ -38,7 +38,7 @@
         moveWindowLeftVirtualDesktop: moveWindowLeftVirtualDesktop {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_SHIFT &kp LEFT>;
+            bindings = <&kp LC(LA(LS(LEFT_ARROW)))>;
             label = "MOVEWINDOWLEFTVIRTUALDESKTOP";
             wait-ms = <20>;
             tap-ms = <20>;
@@ -47,10 +47,8 @@
         moveWindowRightVirtualDesktop: moveWindowRightVirtualDesktop {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_SHIFT &kp RIGHT>;
+            bindings = <&kp LC(LA(LS(RIGHT_ARROW)))>;
             label = "MOVEWINDOWRIGHTVIRTUALDESKTOP";
-            wait-ms = <30>;
-            tap-ms = <30>;
         };
     };
 
