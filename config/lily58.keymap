@@ -50,6 +50,34 @@
             bindings = <&kp LC(LA(LS(RIGHT_ARROW)))>;
             label = "MOVEWINDOWRIGHTVIRTUALDESKTOP";
         };
+
+        moveWindowLeft: moveWindowLeft {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LS(LEFT_ARROW))>;
+            label = "MOVEWINDOWLEFT";
+        };
+
+        moveWindowRight: moveWindowRight {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LS(RIGHT_ARROW))>;
+            label = "MOVEWINDOWRIGHT";
+        };
+
+        moveWindowUp: moveWindowUp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LS(UP_ARROW))>;
+            label = "MOVEWINDOWUP";
+        };
+
+        moveWindowDown: moveWindowDown {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LS(UP_ARROW))>;
+            label = "MOVEWINDOWDOWN";
+        };
     };
 
     keymap {
@@ -105,7 +133,7 @@
 
             display-name = "Moves";
             bindings = <
-&trans            &trans  &trans  &trans        &trans  &trans                    &trans                      &trans                         &trans                          &trans                       &trans  &trans
+&trans            &trans  &trans  &trans        &trans  &trans                    &moveWindowLeft             &moveWindowDown                &moveWindowDown                 &moveWindowRight             &trans  &trans
 &none             &none   &none   &none         &none   &none                     &kp HOME                    &kp PG_DN                      &kp PG_UP                       &kp END                      &none   &trans
 &kp LEFT_SHIFT    &none   &none   &none         &none   &none                     &kp LEFT                    &kp DOWN                       &kp UP_ARROW                    &kp RIGHT                    &none   &none
 &kp LEFT_CONTROL  &none   &none   &none         &none   &none   &trans    &trans  &move_left_virtual_desktop  &moveWindowLeftVirtualDesktop  &moveWindowRightVirtualDesktop  &move_right_virtual_desktop  &none   &kp RIGHT_SHIFT
