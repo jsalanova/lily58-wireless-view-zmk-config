@@ -75,7 +75,7 @@
         moveWindowDown: moveWindowDown {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LS(DOWN_ARROW))>;
+            bindings = <&kp LG(LS(DOWN))>;
             label = "MOVEWINDOWDOWN";
         };
 
