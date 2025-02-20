@@ -140,7 +140,7 @@
 
             display-name = "Moves";
             bindings = <
-&trans            &trans  &trans  &trans        &trans  &trans                    &moveWindowLeft             &moveWindowDown                &moveWindowDown                 &moveWindowRight             &trans  &trans
+&trans            &trans  &trans  &trans        &trans  &trans                    &moveWindowLeft             &moveWindowDown                &moveWindowUp                   &moveWindowRight             &trans  &trans
 &none             &none   &none   &none         &none   &none                     &kp HOME                    &kp PG_DN                      &kp PG_UP                       &kp END                      &none   &trans
 &kp LEFT_SHIFT    &none   &none   &none         &none   &none                     &kp LEFT                    &kp DOWN                       &kp UP_ARROW                    &kp RIGHT                    &none   &windowEnter
 &kp LEFT_CONTROL  &none   &none   &none         &none   &none   &trans    &trans  &move_left_virtual_desktop  &moveWindowLeftVirtualDesktop  &moveWindowRightVirtualDesktop  &move_right_virtual_desktop  &none   &kp RIGHT_SHIFT
